@@ -1,0 +1,73 @@
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+#table{
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
+	border: 10px solid black;
+}
+.row{
+	overflow: hidden;
+}
+.square {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.light {
+	background-color: white;
+}
+.dark {
+	background-color: #ccc;
+}
+.piece {
+	height: 50px;
+	width: 50px;
+	background-repeat: none;
+	background-image: url(images/sprite.png);
+	cursor: pointer;
+}
+.pawn.white {
+	background-position: 0 0;
+}
+.pawn.black {
+	background-position: -50px 0;
+}
+.bishop.white {
+	background-position: 0 -50px;
+}
+.bishop.black {
+	background-position: -50px -50px;
+}
+.knight.white {
+	background-position: 0 -100px;
+}
+.knight.black {
+	background-position: -50px -100px;
+}
+.tower.white {
+	background-position: 0 -150px;
+}
+.tower.black {
+	background-position: -50px -150px;
+}
+.queen.white {
+	background-position: 0 -200px;
+}
+.queen.black {
+	background-position: -50px -200px;
+}
+.king.white {
+	background-position: 0 -250px;
+}
+.king.black {
+	background-position: -50px -250px;
+}
