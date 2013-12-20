@@ -1,6 +1,6 @@
 $(function(){
 	$('.piece').on({
-		dragstart: function(e){ 
+		dragstart: function(e){
 			console.log('dragstart');
 		}
 	});
